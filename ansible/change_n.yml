@@ -1,0 +1,9 @@
+---
+- hosts: 192.168.56.1
+  user: ubuntu
+  tasks:
+    - name: change_host_n
+      lineinfile:
+        path: etc/hostname
+        regexp: "^ioshak"
+        line: new_host
